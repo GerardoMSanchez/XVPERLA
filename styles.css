@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  line-height: 0;
 }
 
 button, a {
@@ -13,7 +14,8 @@ button, a {
     border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    line-height: 1.4;
+    border: none;
 }
 
 body, html {
@@ -24,6 +26,15 @@ body, html {
 
 .section {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.half-section {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +85,7 @@ body, html {
 }
 
 #countdown {
-    background-color: #bbb;
+    background-color: #f5e6f7;
 }
 
 
@@ -84,4 +95,6 @@ body, html {
 
 #form {
     background-color: #bbb;
+    display: flex;
+    flex-direction: column;
 }
