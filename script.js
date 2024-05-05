@@ -24,3 +24,16 @@ scrollContainer.addEventListener('wheel', (event) => {
   event.preventDefault();
   scrollContainer.scrollLeft += event.deltaY;
 });
+
+
+// Establecer scroll suave para los enlaces de anclaje
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  
