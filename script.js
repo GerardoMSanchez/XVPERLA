@@ -17,42 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// This script is optional and used for smooth scrolling
-const scrollContainer = document.querySelector('.carousel');
-
-scrollContainer.addEventListener('wheel', (event) => {
-  event.preventDefault();
-  scrollContainer.scrollLeft += event.deltaY;
-});
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section');
-    let currentSectionIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
 
-    function scrollToNextSection() {
-        if (currentSectionIndex < sections.length - 1) {
-            currentSectionIndex++;
-            sections[currentSectionIndex].scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+    function mostrarSiguienteSlide() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
     }
 
-    function scrollToPreviousSection() {
-        if (currentSectionIndex > 0) {
-            currentSectionIndex--;
-            sections[currentSectionIndex].scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    }
-
-    window.addEventListener('wheel', function(e) {
-        if (e.deltaY > 0) {
-            scrollToNextSection();
-        } else if (e.deltaY < 0) {
-            scrollToPreviousSection();
-        }
-    });
+    setInterval(mostrarSiguienteSlide, 1000); // Mueve el carrusel cada segundo
 });
