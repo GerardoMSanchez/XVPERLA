@@ -7,12 +7,26 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="carousel">
-    <div class="slide"><img src="imagenes/imagen1.jpg" alt="Imagen 1"></div>
-    <div class="slide"><img src="imagenes/imagen2.jpg" alt="Imagen 2"></div>
-    <div class="slide"><img src="imagenes/imagen3.jpg" alt="Imagen 3"></div>
-  </div>
+    <section>
+        <div class="carousel">
+            <div class="slide"><img src="imagenes/imagen1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="imagenes/imagen2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="imagenes/imagen3.jpg" alt="Imagen 3"></div>
+        </div>
+    </section>
+    <section>
+        <h2>Formulario</h2>
+        <form id="confirmation-form">
+            <label for="family-name">Nombre de la Familia:</label>
+            <input type="text" id="family-name" name="family-name" required>
+            
+            <label for="guests">Número de Invitados:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <button type="submit">Confirmar Asistencia</button>
+        </form>
+    </section>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
