@@ -13,19 +13,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // Abrir enlace de WhatsApp en una nueva pestaña
         window.open(whatsappURL, '_blank');
     });
-});
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelectorAll('.slide');
-    let currentIndex = 0;
+    // Configuración del contador regresivo para el evento
+    const eventDate = new Date('2024-07-20T00:00:00');
 
-    function mostrarSiguienteSlide() {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add('active');
+    function updateCountdown() {
+        const now = new Date();
+        const difference = eventDate - now;
+
+        if (difference <= 0) {
+            document.getElementById('countdown-timer').innerHTML = 'El evento ha terminado.';
+        } else {
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown-timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
     }
 
-    setInterval(mostrarSiguienteSlide, 1000); // Mueve el carrusel cada segundo
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
 });
