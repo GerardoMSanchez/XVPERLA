@@ -26,14 +26,33 @@ scrollContainer.addEventListener('wheel', (event) => {
 });
 
 
-// Establecer scroll suave para los enlaces de anclaje
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    let currentSectionIndex = 0;
+
+    function scrollToNextSection() {
+        if (currentSectionIndex < sections.length - 1) {
+            currentSectionIndex++;
+            sections[currentSectionIndex].scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    function scrollToPreviousSection() {
+        if (currentSectionIndex > 0) {
+            currentSectionIndex--;
+            sections[currentSectionIndex].scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    window.addEventListener('wheel', function(e) {
+        if (e.deltaY > 0) {
+            scrollToNextSection();
+        } else if (e.deltaY < 0) {
+            scrollToPreviousSection();
+        }
     });
-  });
-  
+});
