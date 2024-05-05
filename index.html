@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XV PERLITA</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV PERLITA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="carousel" class="section">
@@ -42,19 +45,19 @@
         </button>
     </section>
 
-    <section id="countdown" class="section">
+    <section id="countdown" class="half-section">
         <h2>Faltan</h2>
         <div id="countdown-timer"></div>
     </section>
 
     <section id="form" class="section">
-        <h2>Formulario</h2>
+        <h2>Formulario</h2><br>
         <form id="confirmation-form">
             <label for="family-name">Nombre de la Familia:</label>
-            <input type="text" id="family-name" name="family-name" required>
+            <input type="text" id="family-name" name="family-name" required><br>
             
             <label for="guests">Número de Invitados:</label>
-            <input type="number" id="guests" name="guests" min="1" required>
+            <input type="number" id="guests" name="guests" min="1" required><br>
             
             <button type="submit">Confirmar Asistencia</button>
         </form>
