@@ -38,3 +38,22 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(updateCountdown, 1000);
     updateCountdown();
 });
+
+function mostrarOpciones() {
+    var nombreSeleccionado = document.getElementById('nombre').value;
+    var opciones = document.getElementById('opciones');
+    if (nombreSeleccionado) {
+        opciones.classList.remove('hidden');
+    } else {
+        opciones.classList.add('hidden');
+    }
+}
+
+function mostrarInvitados(asistira) {
+    var invitados = document.getElementById('invitados');
+    if (asistira) {
+        invitados.classList.remove('hidden');
+    } else {
+        invitados.classList.add('hidden');
+    }
+}
