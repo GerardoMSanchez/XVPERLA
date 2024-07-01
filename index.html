@@ -180,8 +180,18 @@
             <option value="Yañez Flores">Yañez Flores</option>
             <option value="Yañez Moreno">Yañez Moreno</option>
             <option value="Zoe">Zoe</option>
-        </select>
+        </select><br><br>
+        
+        <div id="opciones" class="hidden">
+            <button type="button" onclick="mostrarInvitados(true)">Asistiré</button>
+            <button type="button" onclick="mostrarInvitados(false)">No asistiré</button>
 
+            <div id="invitados" class="hidden">
+                <input type="number" id="num_invitados" name="num_invitados" min="1" max="2"><br>
+            </div>
+        </div>
+
+        <input type="submit" value="Confirmar">
 
     </section>
 
