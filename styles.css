@@ -80,12 +80,24 @@ body, html {
     }
 }
 
-#section1 img {
+#imagenes img {
     width: 100%;
 }
 
 #countdown {
     background-color: #f5e6f7;
+}
+
+#countdown-timer {
+    font-family: 'Arial, sans-serif';
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    color: #5d3fd3;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 1.5em;
 }
 
 
@@ -115,7 +127,6 @@ p {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
-    border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     text-align: center;
