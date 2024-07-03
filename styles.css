@@ -89,14 +89,14 @@ body, html {
 }
 
 #countdown {
-    background-color: #f5e6f7;
+    /*background-color: #f5e6f7;*/
+    background-image: url("imagenes/imagen6.jpg");
 }
 
 #countdown-timer {
     font-size: 3em;
     color: #333;
-    /*background-color: #f8f8f8;*/
-    background-image: url("imagenes/imagen6.jpg");
+    background-color: #f8f8f8;
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
