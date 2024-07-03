@@ -33,6 +33,10 @@ body, html {
     text-align: center;
 }
 
+#section1 {
+    margin: 1vw;
+}
+
 .half-section {
     height: 50vh;
     display: flex;
@@ -89,15 +93,14 @@ body, html {
 }
 
 #countdown-timer {
-    font-family: 'Arial, sans-serif';
-    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
-    color: #5d3fd3;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    font-size: 1.5em;
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    background-color: #f8f8f8; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde del div */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 
