@@ -93,13 +93,13 @@ body, html {
 }
 
 #countdown-timer {
-    font-size: 3em; /* Tamaño de la fuente */
-    color: #333; /* Color del texto */
-    background-color: #f8f8f8; /* Color de fondo */
-    border: 1px solid #ddd; /* Borde del div */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    border-radius: 8px; /* Bordes redondeados */
+    font-size: 3em;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -176,6 +176,9 @@ input[type="submit"]:hover {
     background-color: #5d3fd3;
 }
 
+.hidden {
+    display: none;
+}
 .hidden {
     display: none;
 }
