@@ -93,7 +93,7 @@ body, html {
 }
 
 #countdown-timer {
-    font-size: 24px; /* Tamaño de la fuente */
+    font-size: 3em; /* Tamaño de la fuente */
     color: #333; /* Color del texto */
     background-color: #f8f8f8; /* Color de fondo */
     border: 1px solid #ddd; /* Borde del div */
@@ -126,7 +126,8 @@ p {
 }
 
 #form {
-    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    /*background: linear-gradient(135deg, #e0c3fc, #8ec5fc);*/
+    background-image: url(imagenes/imagen5.jpg);
     display: flex;
     justify-content: center;
     background-color: #ffffff;
