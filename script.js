@@ -94,7 +94,6 @@ const maxInvitadosPorAsistente = {
     'Jochua': 1,
     'Juan Pablo Farias García': 2,
     'Karina Meléndez Hernández': 2,
-    'Karol Coronado': 1,
     'Kary del Angel': 1,
     'Katy': 1,
     'Leonardo Yeray Constantino Blanco': 1,
