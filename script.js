@@ -191,7 +191,7 @@ function enviarWhatsApp() {
     var numInvitados = document.getElementById('num_invitados').value || 0;
 
     var mensaje = `Hola, soy ${nombre}. ${asistira === "Sí" ? `Asistiré con ${numInvitados} invitado(s).` : `No podré asistir.`}`;
-    var numero = "8118926229"; // Reemplaza con el número de WhatsApp destinatario
+    var numero = "8123822075"; // Reemplaza con el número de WhatsApp destinatario
     var url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
     window.open(url, '_blank');
