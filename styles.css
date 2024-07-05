@@ -91,6 +91,7 @@ body, html {
 #countdown {
     /*background-color: #f5e6f7;*/
     background-image: url("imagenes/imagen12.jpg");
+    background-size: cover;
 }
 
 #countdown-timer {
