@@ -184,3 +184,15 @@ function mostrarInvitados(asistira) {
         inputInvitados.value = '';
     }
 }
+
+function enviarWhatsApp() {
+    var nombre = document.getElementById('nombre').value;
+    var asistira = document.getElementById('invitados').classList.contains('hidden') ? "No" : "Sí";
+    var numInvitados = document.getElementById('num_invitados').value || 0;
+
+    var mensaje = `Hola, soy ${nombre}. ${asistira === "Sí" ? `Asistiré con ${numInvitados} invitado(s).` : `No podré asistir.`}`;
+    var numero = "8118926229"; // Reemplaza con el número de WhatsApp destinatario
+    var url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, '_blank');
+}
