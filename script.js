@@ -161,6 +161,14 @@ const maxInvitadosPorAsistente = {
     'Don Keiner': 4,
     'Ari': 1,
     'Luis Carlos Yañez Flores': 2,
+    'Narvaez Malacara': 5,
+    'Maria Luisa Rocha Hernández': 1,
+    'Tía Toña': 5,
+    'Padre Justo Javier Treviño Rocha': 3,
+    'Hernández Robles': 4,
+    'Miguel Angel Sauceda Rodriguez': 2,
+    'Martinez Leal': 3,
+
 };
 
 function mostrarOpciones() {
